@@ -40,6 +40,63 @@ nav a:hover {
     color: #e5ddc8;
 }
 
+.banner {
+    width: 100%;
+    background-image: url("./media/jakes-meals.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 750px) {
+    .banner {
+      background-image: none;
+    }
+  }
+
+aside {
+    display:flex;
+    flex-wrap:wrap;
+    margin:1rem;
+}
+
+.content {
+    flex:1;
+    margin-right:20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.image-container img {
+    border-radius:10px;
+}
+
+@media only screen and (max-width: 991px) {
+    aside {
+        flex-direction: column;
+    }
+
+    .image-container {
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content,
+    .image-container {
+        margin-right: 0;
+    }
+}
+
 article {
     padding: 1rem;
 }
