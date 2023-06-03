@@ -41,15 +41,16 @@ nav a:hover {
 }
 
 .banner {
+    height: 300px;
     width: 100%;
-    background-image: url("./media/jakes-meals.jpg");
+    background-image: url("../media/jakes-meals.jpg");
     background-repeat: repeat-x;
-    background-size: cover;
 }
 
 @media only screen and (max-width: 750px) {
     .banner {
       background-image: none;
+      height:0px;
     }
   }
 
